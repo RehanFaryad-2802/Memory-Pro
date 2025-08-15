@@ -1,0 +1,30 @@
+{
+  "manifest_version": 2.1,
+  "name": "Local Memory Pro",
+  "version": "3.0",
+  "description": "Local note/snippet manager with tags, pinning, search, auto-tagging, organize and theme.",
+  "permissions": ["contextMenus", "storage", "activeTab", "tabs", "downloads"],
+  "background": { "service_worker": "background.js" },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Memory Manager",
+    "default_icon": {
+      "16": "icon.png",
+      "32": "icon.png",
+      "48": "icon.png",
+      "128": "icon.png"
+    }
+  },
+  "icons": {
+    "16": "icon.png",
+    "32": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  },
+  "commands": {
+    "quick_capture": {
+      "suggested_key": { "default": "Ctrl+Shift+M" },
+      "description": "Save clipboard"
+    }
+  }
+}

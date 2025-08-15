@@ -1,0 +1,7 @@
+/* minimal highlighting palette used by SimpleHighlighter */
+.hl-keyword { color: #c792ea; font-weight:600; }
+.hl-string { color: #ecc48d; }
+.hl-number { color: #f78c6c; }
+.hl-comment { color: #6c7781; font-style:italic; }
+.hl-built { color: #7dd3fc; }
+.hl-function { color: #82e9a3; }

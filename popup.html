@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Memory Pro</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="highlight.css" />
+</head>
+<body>
+  <div class="container">
+    <header class="top-row">
+      <div class="title">
+        <img src="icon.png" alt="icon" class="logo"/>
+        <h1>Memory Pro</h1>
+      </div>
+      <div class="top-controls">
+        <input id="search" placeholder="Search by text or tag..." />
+        <button id="viewToggle" title="Toggle grid/list">▦</button>
+        <button id="groupToggle" title="Toggle group by tag/date">☰</button>
+        <button id="openInTabBtn" title="Open in New Tab">↗</button>
+      </div>
+    </header>
+
+    <section class="create">
+      <textarea id="newText" placeholder="Type or paste text..."></textarea>
+      <div class="create-row">
+        <input id="newTag" placeholder="Tag(s) — comma separated (optional)" />
+        <label class="toggle">
+          <input id="pinOnAdd" type="checkbox">
+          <span class="slider"></span>
+          <span class="label-text">Pin</span>
+        </label>
+        <button id="addBtn">Add</button>
+      </div>
+      <div class="small-controls">
+        <input id="importFile" type="file" accept=".json" style="display:none" />
+        <button title="Duplicate" id="duplicateBtn">📑</button>
+        <button title="Merge Selected Content" id="mergeBtn">🖇</button>
+        <button title="Export data" id="exportBtn">💾</button>
+        <button title="Export Selected Content" id="exportSelBtn">📤</button>
+        <button title="Import Content" id="importBtn">🗂️</button>
+        <button title="Delete all" id="clearAll">🗑️</button>
+      </div>
+    </section>
+
+    <div id="tagBar" class="tag-bar"></div>
+
+    <div id="listContainer" class="list-container list-view">
+      <!-- items rendered here -->
+      <ul id="memoryList" class="memory-list"></ul>
+    </div>
+
+  <script src="highlight.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>

@@ -1,5 +1,5 @@
 {
-  "manifest_version": 2.0,
+  "manifest_version": 3,
   "name": "Local Memory Pro",
   "version": "3.0",
   "description": "Local note/snippet manager with tags, pinning, search, auto-tagging, organize and theme.",
@@ -28,4 +28,5 @@
     }
   }
 }
+
 
